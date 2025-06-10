@@ -10,11 +10,12 @@ const Nav = () => {
           <img className="logo" src={logo} alt="" />
         </Link>
         <Link to="/">HOME</Link>
-        <Link to="/booking">ABOUT</Link>
+        <Link to="/booking">BOOKING</Link>
+        {/*<Link to="/booking">ABOUT</Link>
         <Link to="/booking">MENU</Link>
-        <Link to="/booking">RESERVATIONS</Link>
         <Link to="/booking">ORDER ONLINE</Link>
         <Link to="/booking">LOGIN</Link>
+        */}
       </ul>
     </div>
   );

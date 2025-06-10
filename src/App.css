@@ -94,3 +94,46 @@ p {
   background-color: rgb(0, 24, 0);
   border-radius: 10px;
 }
+
+.booking-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 600px;
+  background-color: bisque;
+  border-radius: 5px;
+  text-align: center;
+}
+label {
+  font-family: "Roboto";
+  font-weight: 500;
+  padding-right: 10px;
+}
+input {
+  width: 200px;
+  height: 30px;
+  font-size: large;
+  border-radius: 5px;
+  background-color: beige;
+  color: darkgreen;
+}
+select {
+  width: 200px;
+  height: 30px;
+  font-size: large;
+  border-radius: 5px;
+  background-color: beige;
+  color: darkgreen;
+}
+button {
+  background-color: green;
+  color: white;
+  border: solid 1px black;
+}
+
+button:hover {
+  background-color: rgb(1, 75, 1);
+}
+.booking-div {
+  height: 50px;
+}
