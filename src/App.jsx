@@ -1,17 +1,21 @@
+import { Fragment } from "react";
 import "./App.css";
 import Main from "./Component/Main";
-import Header from "./Component/Header";
 import Nav from "./Component/Nav";
 import Footer from "./Component/Footer";
+import BookingPage from "./Pages/BookingPage/BookingPage";
+import { Routes, Route } from "react-router";
 
 function App() {
   return (
-    <>
-      <Header />
+    <Fragment>
       <Nav />
-      <Main />
+      <Routes>
+        <Route path="/" element={<Main />}></Route>
+        <Route path="booking" element={<BookingPage />}></Route>
+      </Routes>
       <Footer />
-    </>
+    </Fragment>
   );
 }
 
