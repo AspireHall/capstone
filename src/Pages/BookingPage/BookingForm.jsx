@@ -4,12 +4,19 @@ import "./../../App.css";
 const BookingForm = (props) => {
   const handleChange = (e) => {
     const { name, value } = e.target;
-    props.dispatch({ type: "SET_TIME", field: name, value });
+    props.dispatch({
+      type: name === "date" ? "SET_DATE" : "SET_TIME",
+      field: name,
+      value,
+    });
   };
+
   const submitForm = (e) => {
     e.preventDefault();
     console.log("Form Submitted", props.state);
     props.dispatch({ type: "RESET" });
+    props.submitAPI(props.state);
+    console.log(props.submitAPI(props.state));
   };
 
   return (
@@ -22,7 +29,7 @@ const BookingForm = (props) => {
             <input
               name="date"
               type="date"
-              value={props.state.date}
+              value={props.selectedDate}
               onChange={handleChange}
               id="res-date"
             />
@@ -35,12 +42,13 @@ const BookingForm = (props) => {
               onChange={handleChange}
               id="res-time"
             >
-              <option value="">Select time</option>
-              <option value="17:00">17:00</option>
-              <option value="18:00">18:00</option>
-              <option value="19:00">19:00</option>
-              <option value="20:00">20:00</option>
-              <option value="21:00">21:00</option>
+              {props.availableTimes.map((time, index) => {
+                return (
+                  <option key={index} value={time}>
+                    {time}
+                  </option>
+                );
+              })}
             </select>
           </div>
           <div className="booking-div">
