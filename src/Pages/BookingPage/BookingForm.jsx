@@ -1,7 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router";
 import "./../../App.css";
+import ConfirmationPage from "./ConfirmationPage";
 
 const BookingForm = (props) => {
+  const navigate = useNavigate();
   const handleChange = (e) => {
     const { name, value } = e.target;
     props.dispatch({
@@ -17,6 +20,7 @@ const BookingForm = (props) => {
     props.dispatch({ type: "RESET" });
     props.submitAPI(props.state);
     console.log(props.submitAPI(props.state));
+    navigate("/confirmation");
   };
 
   return (
@@ -25,13 +29,16 @@ const BookingForm = (props) => {
         <h1>Book A Table</h1>
         <form onSubmit={submitForm}>
           <div className="booking-div">
-            <label htmlFor="res-date">Choose date</label>
+            <label aria-label="On Click" htmlFor="res-date">
+              Choose date
+            </label>
             <input
               name="date"
               type="date"
               value={props.selectedDate}
               onChange={handleChange}
               id="res-date"
+              required
             />
           </div>
           <div className="booking-div">
@@ -41,6 +48,7 @@ const BookingForm = (props) => {
               value={props.state.time}
               onChange={handleChange}
               id="res-time"
+              required
             >
               {props.availableTimes.map((time, index) => {
                 return (
@@ -62,6 +70,7 @@ const BookingForm = (props) => {
               min="1"
               max="10"
               id="res-guests"
+              required
             />
           </div>
           <div className="booking-div">
@@ -71,6 +80,7 @@ const BookingForm = (props) => {
               value={props.state.occasion}
               onChange={handleChange}
               id="res-occasion"
+              required
             >
               <option value="Birthday">Birthday</option>
               <option value="Anniversary">Anniversary</option>

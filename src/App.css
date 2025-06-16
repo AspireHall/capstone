@@ -137,3 +137,14 @@ button:hover {
 .booking-div {
   height: 50px;
 }
+
+.confirm {
+  width: 80%;
+  height: 80%;
+  margin: 10%;
+  border: solid 5px black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
