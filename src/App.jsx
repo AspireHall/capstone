@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import "./App.css";
 import Main from "./Component/Main";
 import Nav from "./Component/Nav";
+import About from "./Component/About";
 import Footer from "./Component/Footer";
 import BookingPage from "./Pages/BookingPage/BookingPage";
 import { Routes, Route } from "react-router";
@@ -16,6 +17,7 @@ function App() {
         <Route path="booking" element={<BookingPage />} />
         <Route path="confirmation" element={<ConfirmationPage />} />
       </Routes>
+      <About />
       <Footer />
     </Fragment>
   );

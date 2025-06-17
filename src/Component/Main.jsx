@@ -1,5 +1,6 @@
 import React from "react";
 import "./../App.css";
+import { Link } from "react-router";
 import chicken from "./../assets/lemonChicken.png";
 import salad from "./../assets/salad.png";
 import bruchetta from "./../assets/bruchetta.png";
@@ -13,6 +14,9 @@ const Main = () => {
           <h1>Little Lemon</h1>
           <h2>Chicago</h2>
           <p>Little Lemon Restaurant, Chicago Finest </p>
+          <Link to="/booking">
+            <button>Book A Table</button>
+          </Link>
         </div>
         <div>
           <img className="image1" src={chicken} />
