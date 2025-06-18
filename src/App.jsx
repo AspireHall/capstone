@@ -7,6 +7,7 @@ import Footer from "./Component/Footer";
 import BookingPage from "./Pages/BookingPage/BookingPage";
 import { Routes, Route } from "react-router";
 import ConfirmationPage from "./Pages/BookingPage/ConfirmationPage";
+import Testimonials from "./Component/Testimonials";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="booking" element={<BookingPage />} />
         <Route path="confirmation" element={<ConfirmationPage />} />
       </Routes>
+      <Testimonials />
       <About />
       <Footer />
     </Fragment>

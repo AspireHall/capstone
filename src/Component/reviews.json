@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "rating": 4.6,
+    "profile": {
+      "name": "Sarah Postew",
+      "gender": "Female",
+      "location": "Austin"
+    },
+    "image": "/assets/Sarah.png",
+    "review": "I had a lovely dinner at Little Lemon Restaurant last weekend. The atmosphere was cozy and welcoming, with a charming Mediterranean vibe. I ordered the lemon garlic chicken with roasted vegetables, and it was absolutely delicious—tender, flavorful, and beautifully presented. The staff was friendly and attentive without being overbearing!"
+  },
+  {
+    "id": 2,
+    "rating": 5.0,
+    "profile": {
+      "name": "James Lin",
+      "gender": "Male",
+      "location": "Chicago"
+    },
+    "image": "/assets/James.png",
+    "review": "Little Lemon exceeded my expectations. From the moment we walked in, the staff was incredibly hospitable. I had the grilled sea bass with lemon herb butter, and it was phenomenal. The ingredients tasted fresh and the flavors were well-balanced. The ambiance was calm and perfect for date night. Highly recommend!"
+  },
+  {
+    "id": 3,
+    "rating": 4.2,
+    "profile": {
+      "name": "Amina Khan",
+      "gender": "Female",
+      "location": "New York"
+    },
+    "image": "/assets/Amina.png",
+    "review": "Great experience at Little Lemon! The décor is stylish but not overdone, and the menu had plenty of vegetarian options, which I really appreciated. I had the lemon risotto and a citrus tart for dessert—both were delicious. Service was polite but a bit rushed. Still, I’d go again for the food alone!"
+  }
+]
