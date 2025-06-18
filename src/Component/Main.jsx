@@ -10,10 +10,19 @@ const Main = () => {
   return (
     <>
       <div className="hero-section">
-        <div>
+        <div className="hero-intro">
           <h1>Little Lemon</h1>
           <h2>Chicago</h2>
-          <p>Little Lemon Restaurant, Chicago Finest </p>
+          <p>
+            Nestled in the heart of the city, Little Lemon is a cozy,
+            Mediterranean-inspired eatery known for its fresh ingredients, bold
+            flavors, and warm, inviting atmosphere. From zesty lemon garlic
+            chicken to homemade citrus desserts, every dish is crafted with care
+            to bring a burst of sunshine to your plate. Whether you're here for
+            a casual lunch, a romantic dinner, or a relaxed night out with
+            friends, Little Lemon offers a delicious and memorable dining
+            experience.{" "}
+          </p>
           <Link to="/booking">
             <button>Book A Table</button>
           </Link>
